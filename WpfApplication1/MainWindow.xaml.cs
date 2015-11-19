@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Timers;
 
 namespace WpfApplication1
 {
@@ -24,5 +25,22 @@ namespace WpfApplication1
         {
             InitializeComponent();
         }
+
+        private void Rectangle_MouseEnter(object sender, MouseEventArgs e)
+        {
+            (sender as Rectangle).Fill = Brushes.BlueViolet;
+        }
+
+        private void Rectangle_MouseLeave(object sender, MouseEventArgs e)
+        {
+            (sender as Rectangle).Fill = Brushes.Black;
+        }
+
+        private void Color_Rectangle()
+        {
+            Timer timer1 = new Timer();
+
+        }
     }
+
 }

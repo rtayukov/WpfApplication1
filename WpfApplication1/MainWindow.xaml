@@ -11,7 +11,7 @@
         </Grid.ColumnDefinitions>
         <StackPanel HorizontalAlignment="Left" Height="250" Margin="120,35,0,0" VerticalAlignment="Top" Width="315" Grid.ColumnSpan="2">
             <Rectangle Fill="#FFF4F4" HorizontalAlignment="Left" Height="65" Margin="90,0,0,0" Stroke="Black" Width="135" VerticalAlignment="Center"/>
-            <Rectangle Fill="#000000" HorizontalAlignment="Center" Height="65" Width="135" Margin="0,20,0,0" GiveFeedback="new"/>
+            <Rectangle Fill="#000000" HorizontalAlignment="Center" Height="65" Width="135" Margin="0,20,0,0"  MouseEnter="Rectangle_MouseEnter" MouseLeave="Rectangle_MouseLeave"/>
         </StackPanel>
     </Grid>
 </Window>
